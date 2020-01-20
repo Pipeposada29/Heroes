@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { HeroesService } from "../servicios/heroes.service";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buscador',
@@ -8,9 +9,10 @@ import { HeroesService } from "../servicios/heroes.service";
 })
 export class BuscadorComponent implements OnInit {
 
-  heroes:any [] = [];
-  termino:string;
-  constructor(private activateRouter: ActivatedRoute, private _heroesService:HeroesService) { }
+  heroes: any [] = [];
+  termino: string;
+  
+  constructor(private activateRouter: ActivatedRoute, private _heroesService:HeroesService, private router: Router) { }
 
   ngOnInit() {
 
@@ -21,5 +23,9 @@ export class BuscadorComponent implements OnInit {
       console.log(this.heroes);
     })
   }
+  verHeroe(idx:number){
+    this.router.navigate( ['/heroe', idx] ); //idx es una variable de que es de tipo numero
+  
+    } 
 
 }

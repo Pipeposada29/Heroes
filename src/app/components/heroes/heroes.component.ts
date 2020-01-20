@@ -28,6 +28,7 @@ this.heroes=this._heroesService.getHeroes();
   }
 
   verHeroe(idx:number){
+    console.log(idx);
   this.router.navigate( ['/heroe', idx] ); //idx es una variable de que es de tipo numero
 
   } // 
