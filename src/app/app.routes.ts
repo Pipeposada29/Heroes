@@ -4,6 +4,9 @@ import { AboutComponent } from './components/about/about.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from "./components/heroe/heroe.component";
 import {BuscadorComponent } from "./components/buscador/buscador.component";
+import { FooterComponent } from './components/footer/footer.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { ContactosComponent } from './components/contactos/contactos.component';
 
 const APP_ROUTES: Routes=[
    { path:'home', component:HomeComponent},//Todo esto son rutas por las que navegamos
@@ -11,6 +14,9 @@ const APP_ROUTES: Routes=[
    { path:'heroes', component:HeroesComponent},
    { path:'heroe/:id', component:HeroeComponent}, // La ruta heroe recibe un paramatro ID
    { path:'buscar/:termino', component:BuscadorComponent},
+   {path:'footer', component:FooterComponent},
+   {path:'eventos' , component: EventosComponent},
+   {path:'contactos' , component: ContactosComponent},
    {path:'**', pathMatch: 'full',redirectTo:'home' }//Esta es la ruta que se va dirigir cuando  alla un error
 ];
 

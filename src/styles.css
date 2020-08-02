@@ -3,6 +3,10 @@ body{
 }
 .main-container{
     margin-top: 20px;
+    
+}
+.body-color {
+  background: darkseagreen;
 }
 
 .animated {

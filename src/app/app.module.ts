@@ -15,6 +15,10 @@ import { HeroesComponent } from './components/heroes/heroes.component';
 import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { ContactosComponent } from './components/contactos/contactos.component';
+
 
 
 
@@ -28,7 +32,10 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
     HeroesComponent,
     HeroeComponent,
     BuscadorComponent,
-    HeroeTarjetaComponent
+    HeroeTarjetaComponent,
+    FooterComponent,
+    EventosComponent,
+    ContactosComponent,
   ],
   imports: [
     BrowserModule,
